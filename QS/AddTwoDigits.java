@@ -1,4 +1,3 @@
-
 class AddTwoDigits {
     public int addDigits(int num) {
         if(num==0){
