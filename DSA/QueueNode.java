@@ -55,9 +55,9 @@ public class QueueNode {
         queue.enqueue(10);
         queue.enqueue(20);
         queue.enqueue(30);
-        queue.display(); // Output: 10 20 30
-        System.out.println("Dequeued: " + queue.dequeue()); // Output: Dequeued: 10
-        queue.display(); // Output: 20 30
-        System.out.println("Peek: " + queue.peek()); // Output: Peek: 20
+        queue.display(); 
+        System.out.println("Dequeued: " + queue.dequeue()); 
+        queue.display(); 
+        System.out.println("Peek: " + queue.peek());
     }
 }
