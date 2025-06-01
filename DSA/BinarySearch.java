@@ -1,15 +1,9 @@
 public class BinarySearch {
     public static int _search(int[]array,int target){
-        if (array.length==0) {
-            System.out.println("Array is empty");
-            return -1;
-        }
+        if (array.length==0)return -1;
         if(array[0]==target)return 0;
         if(array[array.length-1]==target)return array.length-1;
-        if(array[0]>target || array[array.length-1]<target){
-            System.out.println("Element not found");
-            return -1;
-        }
+        if(array[0]>target || array[array.length-1]<target)return -1;
         int start=0,end=array.length-1;
         int mid=start+(end-start)/2;
         while (start<=end) {
@@ -20,8 +14,8 @@ public class BinarySearch {
             } else {
                 end=mid-1;
             }
+            mid=start+(end-start)/2;
         }
-        System.out.println("Element not found");
         return -1;
     }
     public static void main(String[] args) {
