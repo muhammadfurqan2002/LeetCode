@@ -1,4 +1,11 @@
 class FindSqrt{
+    public static int _sqrt(int x){
+        int i=1;
+        while (i*i<=x) {
+            i++;
+        }
+        return i-1;
+    }
     public static int sqrt(int x){
         if(x==0 || x==1) return x;
         int low=1,high=x;
@@ -32,5 +39,9 @@ class FindSqrt{
         
         x = 1;
         System.out.println("The square root of " + x + " is: " + sqrt(x));
+
+        x=4;
+        System.out.println("The square root of " + x + " is: " + _sqrt(x));
+
     }
 }
